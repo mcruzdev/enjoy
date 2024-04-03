@@ -1,0 +1,17 @@
+openapi: 3.0.1
+info:
+  title: MessagesAPI
+  version: 1.0.0
+paths:
+  "/messages":
+    get:
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                default:
+                  value: '[{"name": "307", "model": "Peugeot 307", "year": 2003}]'
